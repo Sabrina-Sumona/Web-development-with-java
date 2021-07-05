@@ -10,7 +10,18 @@
 
             out.println("<h3>The square root of 25 is " + Math.sqrt(25) + " .</h3>");
 
+            int a=27, b=3;
+            int sum = a+b;
+            out.println("<p>"+a+" + "+b+" = "+sum+"</p>");
+            int sub = a-b;
+            out.println("<p>"+a+" - "+b+" = "+sub+"</p>");
+            int mul= a*b;
+            out.println("<p>"+a+" * "+b+" = "+mul+"</p>");
+            int div= a/b;
+            out.println("<p>"+a+" / "+b+" = "+div+"</p>");
+
             out.print("<h4>The time is now");
+
         %>
         <%= new java.util.Date() %>
         <% out.print(" .</h4>"); %>
