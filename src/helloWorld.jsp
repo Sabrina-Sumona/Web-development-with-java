@@ -8,7 +8,7 @@
 
             out.println("<h2>This is Sabrina Naorin Sumona.</h2>");
 
-            out.print("<h3>The square root of 25 is " + Math.sqrt(25) + " .</h3>");
+            out.println("<h3>The square root of 25 is " + Math.sqrt(25) + " .</h3>");
 
             out.print("<h4>The time is now");
         %>
