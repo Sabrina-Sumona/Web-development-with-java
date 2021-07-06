@@ -44,33 +44,14 @@
             <h2>Your Address:  </h2><h3><%= request.getParameter("address")%></h3>
             <h2>Your Mobile Number:  </h2><h3>+880<%= request.getParameter("number")%></h3>
             <h2>Your E-mail Address:  </h2><h3><%= request.getParameter("mail")%></h3>
-            <h2><%
-               String[] gender = request.getParameterValues("male");
-               if (gender!=null)
-               {
-                    out.println("Your Gender:  </h2><h3>Male");
-               }
-               else
-               {
-                    out.println("Your Gender:  </h2><h3>Female");
-               }
-            %></h3>
+            <h2>Your Gender:  </h2><h3><%= request.getParameter("gender")%></h3>
             <h2>Your Birth Date: </h2><h3>
                 <%= request.getParameter("date")%>
                 <%= request.getParameter("month")%>,
                 <%= request.getParameter("year")%>
             </h3>
-            <h2><%
-                String[] img = request.getParameterValues("img");
-                if (img!=null)
-                {
-                   out.println("Your Photo: </h2><h3>Uploaded");
-                }
-                else
-                {
-                    out.println("Your Photo: </h2><h3>Not Uploaded");
-                }
-            %></h3>
+            <h2>Your Photo:  </h2><h3><%= request.getParameter("img")%> is uploaded</h3>
+            <img src="../img/<%= request.getParameter("img")%>"/>
             <h2>Your Comment: </h2><h3><%= request.getParameter("ta")%></h3>
         </div>
     </body>
